@@ -1,43 +1,43 @@
-import  java.util.Scanner ;
+import java.util.Scanner;
 
-public  class  Main {
-    public  static  void  main ( String [] args ) {
-      Metodos lis =  new  Metodos ();  
-     booleano  X = verdadero ;
+public class Main {
+    public static void main(String[] args) {
+      Metodos lis = new Metodos();  
+     boolean X=true;
      int opc;
-     Lector de escáner =  nuevo  escáner ( System . In);
-       while ( X ) {
-        Sistema . fuera . println ( " \ n ------- MENÚ ------ " );
-         Sistema . fuera . println ( " Seleccione una opcion " );
-        Sistema . fuera . println ( " [1] Insertar dato " );
-        Sistema . fuera . println ( " [2] Mostrar lista " );
-        Sistema . fuera . println ( " [3] Borrar dato " );
-        Sistema . fuera . println ( " [4] Salir " );
+     Scanner lector = new Scanner(System.in);
+       while(X){ 
+        System.out.println("\n-------MENU------");
+         System.out.println("Seleccione la opcion deceada");
+        System.out.println("1. Insertar dato");
+        System.out.println("2. Mostrar lista");
+        System.out.println("3. Borrar dato");
+        System.out.println("4. Salir");
        
-        opc = lector . nextInt ();
-        cambiar (opc) {
-            caso  1 :
-            Elemento de cadena ;
-            Scanner  Lector  =  nuevo  escáner ( System . In);
-            Sistema . fuera . println ( " inserte un elemento " );
-            elemento = Lector . línea siguiente();
-            lis . insertar (elemento);
-            romper ;
+        opc=lector.nextInt();
+        switch(opc){
+            case 1:
+            String elemento;
+            Scanner Lector = new Scanner(System.in);
+            System.out.println("inserte el elemento ");
+            elemento=Lector.nextLine();
+            lis.insertar(elemento);
+            break;
             
-            caso  2 :
-            lis . Mostrar ();
-            romper ;
+            case 2:
+            lis.Mostrar();
+            break;
             
-            caso  3 :
-            lis . eliminar ();
-            romper ;
+            case 3:
+            lis.eliminar();
+            break;
             
-            caso  4 :
-            X =  falso ;
-            romper ;
+            case 4:
+            X= false;
+            break;
             
-            por defecto :
-                Sistema . fuera . println ( " opcion incorrecta " );
+            default:
+                System.out.println("opcion incorrecta");
         }
         
         
